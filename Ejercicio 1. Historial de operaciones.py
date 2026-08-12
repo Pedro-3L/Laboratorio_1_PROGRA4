@@ -23,13 +23,11 @@ class Pila:
 def sumar(pila):
     if pila.esta_vacia():
         return 0
-
     operacion = pila.pop()
     return operacion.numero + sumar(pila)
 
 
 pila = Pila()
-
 for i in range(5):
     print("Ingrese un numero")
     numero = int(input())
